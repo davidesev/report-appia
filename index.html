@@ -260,8 +260,23 @@
   .method dt { font-weight: 600; color: var(--ink); margin-top: 12px; }
   .method dt:first-child { margin-top: 0; }
   .method dd { margin-top: 2px; }
-  footer { margin-top: 64px; padding: 26px 0 44px; border-top: 1px solid var(--hairline); font-size: 13px; color: var(--ink-3); }
+  footer { margin-top: 64px; padding: 36px 0 44px; border-top: 1px solid var(--hairline); font-size: 13px; color: var(--ink-3); }
   footer a { color: var(--accent); }
+  .credit {
+    background: var(--paper); border: 1px solid var(--hairline); border-radius: var(--radius);
+    padding: 26px 28px; margin-bottom: 22px;
+  }
+  .credit-brand {
+    font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 21px;
+    color: var(--ink); letter-spacing: -0.01em;
+  }
+  .credit-brand span { font-weight: 400; font-style: italic; font-size: 16px; color: var(--ink-2); }
+  .credit-role { font-size: 13.5px; color: var(--ink-2); margin-top: 3px; }
+  .credit-cta { font-size: 14px; color: var(--ink-2); margin-top: 14px; }
+  .credit-legal {
+    font-size: 12px; color: var(--ink-3); margin-top: 14px; padding-top: 14px;
+    border-top: 1px solid #efeade; line-height: 1.55;
+  }
   a { color: var(--accent); }
 
   @media print {
@@ -497,6 +512,20 @@
 
 <footer>
   <div class="wrap">
+    <div class="credit">
+      <div class="credit-brand">Mancardi Green <span>di Severini Davide</span></div>
+      <div class="credit-role">Societ&agrave; di consulenza digitale per il mondo sociale &middot; P. IVA 01435240328</div>
+      <p class="credit-cta">
+        Interessa un lavoro simile sul tuo territorio? Scrivi a
+        <a href="mailto:davide.severini@mancardigreen.com">davide.severini@mancardigreen.com</a>
+        o visita <a href="https://mancardigreen.com" target="_blank" rel="noopener">mancardigreen.com</a>.
+      </p>
+      <p class="credit-legal">
+        &copy; 2026 Mancardi Green di Severini Davide &mdash; tutti i diritti riservati. Testi, valutazioni,
+        note di campo ed elaborazioni di questo report sono propriet&agrave; intellettuale dell&rsquo;autore:
+        la riproduzione, anche parziale, &egrave; consentita solo con citazione della fonte e previa autorizzazione.
+      </p>
+    </div>
     Report generato dalle annotazioni della mappa <a href="https://felt.com/map/Appia-DRSxVpepSF6jszbKkxRu4D" target="_blank" rel="noopener">&ldquo;Appia&rdquo; su Felt</a> &middot; luglio 2026.
     La mappa interattiva richiede una connessione a internet (tile cartografici &copy; OpenStreetMap contributors, &copy; CARTO; immagini satellitari Esri).
   </div>
