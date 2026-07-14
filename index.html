@@ -224,6 +224,34 @@
   }
   .voto-cell b { font-weight: 600; font-variant-numeric: tabular-nums; }
 
+  /* ---------- sintesi operativa ---------- */
+  .sintesi-intro {
+    background: var(--paper); border: 1px solid var(--hairline); border-radius: var(--radius);
+    padding: 22px 26px; font-size: 15px; color: var(--ink-2); margin-bottom: 14px;
+  }
+  .sintesi-intro b { color: var(--ink); font-weight: 600; }
+  .sintesi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  @media (max-width: 860px) { .sintesi-grid { grid-template-columns: 1fr; } }
+  .sintesi-col {
+    background: var(--paper); border: 1px solid var(--hairline); border-radius: var(--radius);
+    padding: 20px 22px; border-top: 3px solid var(--hairline);
+  }
+  .sintesi-col.forti { border-top-color: var(--ecc); }
+  .sintesi-col.crit  { border-top-color: var(--cri); }
+  .sintesi-col.pot   { border-top-color: var(--accent); }
+  .sintesi-col h3 { font-size: 12px; letter-spacing: .11em; text-transform: uppercase; font-weight: 600; color: var(--ink-2); margin-bottom: 12px; }
+  .sintesi-col ul { list-style: none; display: grid; gap: 10px; }
+  .sintesi-col li { font-size: 13.5px; color: var(--ink-2); line-height: 1.5; padding-left: 14px; position: relative; }
+  .sintesi-col li::before { content: ""; position: absolute; left: 0; top: 8px; width: 5px; height: 5px; border-radius: 2px; background: var(--ink-3); }
+  .sintesi-col li b { color: var(--ink); font-weight: 600; }
+  .racc {
+    background: var(--paper); border: 1px solid var(--hairline); border-radius: var(--radius);
+    padding: 20px 24px; margin-top: 14px;
+  }
+  .racc h3 { font-size: 12px; letter-spacing: .11em; text-transform: uppercase; font-weight: 600; color: var(--ink-2); margin-bottom: 10px; }
+  .racc ol { margin-left: 20px; display: grid; gap: 7px; font-size: 13.5px; color: var(--ink-2); }
+  .racc b { color: var(--ink); font-weight: 600; }
+
   /* ---------- method / footer ---------- */
   .method {
     background: var(--paper); border: 1px solid var(--hairline); border-radius: var(--radius);
@@ -393,9 +421,67 @@
   </div>
 </section>
 
+<section id="sintesi">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">07</span><h2>Sintesi operativa</h2></div>
+    <p class="sec-sub">
+      Il quadro d&rsquo;insieme che emerge da voti e note di campo: cosa funziona gi&agrave;, cosa blocca
+      il cammino e dove intervenire per primi.
+    </p>
+    <div class="sintesi-intro">
+      Il rilievo &egrave; andato a buon fine: l&rsquo;intero itinerario Roma&ndash;Benevento &egrave; stato completato
+      e documentato, con un giudizio medio di <b>6,8/10</b> che racconta un&rsquo;esperienza <b>positiva ma discontinua</b>.
+      L&rsquo;eccellenza c&rsquo;&egrave;, ed &egrave; tanta &mdash; 26 tratte da 8 in su, un quarto del tracciato &mdash; ma si alterna
+      senza gradualit&agrave; a passaggi critici (7 tratte da 0&ndash;2, circa 40 km) concentrati su statali e collegamenti
+      pubblici. Il cammino d&agrave; il meglio nei parchi archeologici, nei centri storici e nelle varianti in natura;
+      soffre dove &egrave; costretto sull&rsquo;asfalto o dipende dal trasporto locale. In sintesi: <b>il prodotto
+      &laquo;cammino dell&rsquo;Appia&raquo; esiste gi&agrave; per lunghi tratti</b>, ma oggi richiede spirito di adattamento,
+      un mezzo d&rsquo;appoggio per le tratte peggiori e, quasi ovunque, una guida per esprimere il suo valore.
+    </div>
+    <div class="sintesi-grid">
+      <div class="sintesi-col forti">
+        <h3>Punti forti</h3>
+        <ul>
+          <li><b>I grandi siti archeologici</b>: parco di Minturno (10), anfiteatro di Santa Maria Capua Vetere (9,5), Terracina con Monte Sant&rsquo;Angelo (9,5), teatro e criptoportici di Formia (8,5), arrivo all&rsquo;Arco di Traiano (9).</li>
+          <li><b>La partenza da Roma</b>: Colosseo&ndash;Campidoglio (10) e il basolato dell&rsquo;Appia Antica fino a Ciampino (9,5) sono un inizio all&rsquo;altezza del mito.</li>
+          <li><b>Le sorprese fuori rotta</b>: Gola di Sant&rsquo;Andrea (9,5, &laquo;un must del cammino&raquo;), la camminata in spiaggia con basolato a Baia Azzurra (9,5), la variante naturalistica di Sferracavallo (9), Montesarchio tra i borghi pi&ugrave; belli d&rsquo;Italia (10).</li>
+          <li><b>Il fattore umano</b>: guide, Pro Loco (Casapulla 8), incontri e persino l&rsquo;autostop alzano sistematicamente il voto delle tratte; l&rsquo;enogastronomia (porchetta di Ariccia, mozzarella, Tenute Bianchino) &egrave; un filo conduttore gi&agrave; pronto.</li>
+        </ul>
+      </div>
+      <div class="sintesi-col crit">
+        <h3>Criticit&agrave; principali</h3>
+        <ul>
+          <li><b>Trasporto pubblico locale inaffidabile</b>: siti delle compagnie inusabili, fermate e orari incomprensibili (Frattocchie 2, Terracina&ndash;Fondi 1); Mondragone&ndash;Capua richiede 3 bus e un treno per 25 km, 3&ndash;4 ore (4). &Egrave; il problema pi&ugrave; sistemico del rilievo.</li>
+          <li><b>Statali pericolose</b>: tratti senza marciapiede n&eacute; ombra su SS7 verso Cisterna (2), Fondi (1), Casapulla&ndash;Maddaloni (2): fatica senza valore aggiunto.</li>
+          <li><b>Passaggi impraticabili o mal tracciati</b>: il Fosso Carano (0) &egrave; da evitare del tutto (strada sbarrata, rovi, propriet&agrave; private); cancelli chiusi e errori nei tracciati online mandano fuori strada (Sferracavallo, Ponte Garigliano).</li>
+          <li><b>Aperture non garantite</b>: criptoportici di Formia e Sinuessa, Carceri Vecchie, Villa San Limato: siti chiave trovati chiusi o dentro propriet&agrave; private.</li>
+        </ul>
+      </div>
+      <div class="sintesi-col pot">
+        <h3>Potenzialit&agrave; da sfruttare</h3>
+        <ul>
+          <li><b>La guida come moltiplicatore</b>: &laquo;con una guida sarebbe stato perfetto&raquo; ricorre in tutto il rilievo; pacchetti guidati per tappe e siti trasformerebbero tratte buone in eccellenti.</li>
+          <li><b>Perle da valorizzare</b>: criptoportico di Sinuessa (&laquo;occasione sprecata&raquo;), Villa Petrinum come B&amp;B (&laquo;sarebbe 10/10&raquo;), Torre del Ballarino con esperienza enogastronomica organizzata, l&rsquo;antica Sinuessa nota solo ai local.</li>
+          <li><b>Sinergie territoriali</b>: la Via Felix e l&rsquo;Acquedotto Carolino nel casertano, la Reggia di Caserta come alternativa alle tratte asfaltate, Castel Gandolfo e il lago dai Castelli, Gaeta e la tomba di Cicerone da Formia.</li>
+          <li><b>Varianti da ufficializzare</b>: dove l&rsquo;Appia storica &egrave; impraticabile, le alternative gi&agrave; testate (parco al posto del traffico dopo Quo Vadis, spiaggia a Baia Domizia, valle di Sferracavallo) meritano segnaletica e tracciati ufficiali.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="racc">
+      <h3>Priorit&agrave; operative suggerite</h3>
+      <ol>
+        <li>Prevedere un <b>mezzo d&rsquo;appoggio</b> (o transfer organizzato) per sostituire le tratte critiche: bus Terracina&ndash;Fondi, Mondragone&ndash;Capua e le statali con voto 0&ndash;2.</li>
+        <li>Risolvere o segnalare ufficialmente l&rsquo;<b>alternativa al Fosso Carano</b>, unico punto oggi impraticabile del tracciato a piedi.</li>
+        <li>Costruire con enti e privati un <b>calendario di aperture garantite</b> per i siti chiave (criptoportici, ville, Carceri Vecchie) e pianificare gli arrivi in citt&agrave; al mattino.</li>
+        <li>Codificare le <b>tappe con pernottamento</b> gi&agrave; validate dal rilievo: Roma Ostiense, Terracina, Mondragone, Maddaloni (parte alta), Montesarchio.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
 <section id="metodo">
   <div class="wrap">
-    <div class="sec-head"><span class="sec-num">07</span><h2>Nota di metodo</h2></div>
+    <div class="sec-head"><span class="sec-num">08</span><h2>Nota di metodo</h2></div>
     <dl class="method">
       <dt>Voto tratta (complessivo, da 1 a 10)</dt>
       <dd>Giudizio sintetico sull&rsquo;esperienza della tratta. SV indica le tratte non valutate, in genere puri trasferimenti.</dd>
